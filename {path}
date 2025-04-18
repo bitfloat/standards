@@ -1,0 +1,27 @@
+meta:
+  name: na
+  description: '{x} contains NA-values{result}.'
+  version: 1.0.0
+  reference: ''
+test:
+- 'function (x) '
+- is.na(x = x)
+specs:
+  encoding: bool
+  bits: 1.0
+  requires: ~
+  data:
+    x:
+    - soybean
+    - maize
+    - .na.character
+    - maize
+    - honey
+    - maize
+    - soybean
+    - maize
+    - soybean
+    - maize
+extends:
+  protocol: ~
+  notes: ~
